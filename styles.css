@@ -1,0 +1,72 @@
+/* Reset some default margin and padding */
+body, h1, h2, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background image and positioning */
+body {
+  background-image: url('./images/ocean.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Add a semi-transparent overlay to the background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+/* Style for the main heading */
+h1 {
+  text-align: center;
+  padding: 1em 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the images within the list items */
+img {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the links within the list items */
+li a {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+li a:hover {
+  color: #ff9900;
+}
+
+/* Style for the list items */
+li {
+  list-style: none;
+  padding: 2em;
+  text-align: center;
+}
+
+/* Style for the recipe section heading */
+h2 {
+  text-align: center;
+  padding: 1em 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
