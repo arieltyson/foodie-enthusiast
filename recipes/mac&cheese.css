@@ -74,4 +74,5 @@ h2 {
 /* Change text color to white */
 body, p, li {
   color: white;
+  text-align: center;
 }
