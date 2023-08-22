@@ -2,10 +2,13 @@
 body, h1, h2, ul, li, a {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Make sure the box model stays consistent */
 }
 
 /* Set background image and positioning */
 body {
+  margin: 0;
+  padding: 0;
   background-image: url('./images/ocean.jpg');
   background-size: cover;
   background-position: center center;
@@ -31,6 +34,7 @@ h1 {
   padding: 1em 0;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px; /* Add some space below the heading */
 }
 
 /* Style for the images within the list items */
@@ -39,6 +43,7 @@ img {
   margin: 0 auto; /* Center horizontally */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 100%; /* Make sure images don't overflow the container */
 }
 
 /* Style for the links within the list items */
@@ -50,6 +55,7 @@ li a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+  padding: 10px
 }
 
 li a:hover {
@@ -61,6 +67,8 @@ li {
   list-style: none;
   padding: 2em;
   text-align: center;
+  background-color: rgba(38, 47, 178, 0.05); /* Semi-transparent white */
+  margin-bottom: 20px; /* Add some space below each list item */
 }
 
 /* Style for the recipe section heading */
@@ -69,4 +77,5 @@ h2 {
   padding: 1em 0;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px; /* Add some space above the heading */
 }
