@@ -26,6 +26,7 @@ body::before {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   pointer-events: none;
+  display: block; /* Make sure it's on top of other elements */
 }
 
 /* Style for the main heading */
@@ -35,6 +36,7 @@ h1 {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px; /* Add some space below the heading */
+  display: block; /* Make sure it's on top of other elements */
 }
 
 /* Style for the images within the list items */
@@ -48,7 +50,7 @@ img {
 
 /* Style for the links within the list items */
 li a {
-  display: block;
+  display: inline-block;
   text-align: center;
   margin-top: 1em;
   color: white;
@@ -69,6 +71,8 @@ li {
   text-align: center;
   background-color: rgba(38, 47, 178, 0.05); /* Semi-transparent white */
   margin-bottom: 20px; /* Add some space below each list item */
+  display: block; /* Make sure it's on top of other elements */
+  border-radius: 8px;
 }
 
 /* Style for the recipe section heading */
@@ -78,4 +82,5 @@ h2 {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-top: 20px; /* Add some space above the heading */
+  display: block; /* Make sure it's on top of other elements */
 }
